@@ -5,12 +5,10 @@ pages:
     paths:
     - node_modules/
 
-  stage: deploy
   script:
   - npm install -g @angular/cli@8.3.25
   - npm install
-  - ng build
-  - mv dist/fossilizer/* public/
+  - ng build --prod
   artifacts:
     paths:
     - public
