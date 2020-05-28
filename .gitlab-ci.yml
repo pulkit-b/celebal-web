@@ -1,17 +1,25 @@
-image: node:13.5.0
+build:
 
-pages:
-  cache:
-    paths:
-    - node_modules/
+ stage: build
 
-  script:
-  - npm install -g @angular/cli@8.3.25
-  - npm install
-  - npm run build 
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
-  - pages
+ image: trion/ng-cli
+
+ before_script:
+
+  - npm ci
+
+ script:
+
+  - ng build --prod
+
+ artifacts:
+
+  expire_in: 1 day
+
+  paths:
+
+   - dist/
+
+ tags:
+
+  - docker

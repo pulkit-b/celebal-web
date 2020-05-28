@@ -2,10 +2,9 @@
   "name": "celebal-web",
   "version": "0.0.0",
   "scripts": {
-    "surge" : "surge",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --output-path docs --base-href /celebal-tech/",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
