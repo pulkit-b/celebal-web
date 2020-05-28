@@ -5,7 +5,7 @@
     "surge" : "surge",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --bh='celebal-tech'",
+    "build": "ng build --prod --output-path docs --base-href /celebal-tech/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
