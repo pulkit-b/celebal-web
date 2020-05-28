@@ -2,6 +2,7 @@
   "name": "celebal-web",
   "version": "0.0.0",
   "scripts": {
+    "surge" : "surge",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -20,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "rxjs": "~6.4.0",
+    "surge": "^0.21.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
